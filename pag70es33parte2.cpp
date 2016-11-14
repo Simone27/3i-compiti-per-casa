@@ -10,9 +10,15 @@ int main () {
     cin>>x;
     cout<<"Inserisci l'esponente: ";
     cin>>y;
-    for (int i=0;i<=y;i++) {
-        ris=ris+x;
+    ris=x;
+    if (!(x==0&&y==0)){
+        for (int i=0;i<=y;i++) {
+            ris=ris*x
+        }
+        cout<<"Il risultato e': "<<ris<<endl;
     }
-    cout<<"Il risultato e': "<<ris<<endl;
+    else {
+        cout<<"0^0 e' indefinito."<<endl;
+    }
     return 0;
 }
