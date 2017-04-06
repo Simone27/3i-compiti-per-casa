@@ -20,7 +20,7 @@ void selection_sort(int v[], int dim){
             if (v[i] > v[j]){
                 comodo = v[i];
                 v[i] = v[j];
-                v[i] = comodo;
+                v[j] = comodo;
             }
         }
     }
